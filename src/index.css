@@ -1,0 +1,32 @@
+/* Default (Light) Theme */
+body.light {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* Dark Theme */
+body.dark {
+  --background-color: #333333;
+  --text-color: #ffffff;
+}
+
+/* Apply theme variables */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Additional styles for buttons or other elements */
+button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
